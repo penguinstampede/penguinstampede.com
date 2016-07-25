@@ -1,0 +1,11 @@
+{
+  "name": "penguinstampede-web",
+  "version": "0.1.0",
+  "devDependencies": {
+    "html-pdf": "~2.0.1",
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "^3.4.1",
+    "grunt-jekyll": "~0.4.4",
+    "grunt-html-pdf": "git+ssh://git@github.com:penguinstampede/grunt-html-pdf.git"
+  }
+}

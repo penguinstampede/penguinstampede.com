@@ -1,0 +1,38 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Erin Kosewic
+email: erin@penguinstampede.com
+
+include:
+  - .gitkeep
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - package.json
+  - node_modules
+  - Gruntfile.js
+
+description: > # this means to ignore newlines until "baseurl:"
+  Web Developer based in Pasadena, CA specializing in marketing websites.
+  Often found tinkering with repos at two in the morning.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://penguinstampede.com" # the base hostname & protocol for your site
+
+gems:
+  - jekyll-assets
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
+  prefix: "assets"
+
+# Build settings
+markdown: kramdown
