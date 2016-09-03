@@ -8,6 +8,7 @@ integrations including interfacing with Hubspot, NetSuite, SendGrid, and SalesFo
 - **Check out:**
 - [Elements4D][elements]
 - [ARToolKit][artk]
+- [Melon][melon]
 
 *June 2012 - April 2013*
 **Addion, Lead Frontend Developer**
@@ -34,4 +35,5 @@ Clients included the City of Manhatan Beach, City of Reno, The Big Blue Bus, and
 
 [elements]: http://elements4d.daqri.com
 [artk]: http://artoolkit.org
+[melon]: http://thinkmelon.com
 [addion]: http://addion.com
