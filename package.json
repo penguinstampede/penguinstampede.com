@@ -2,10 +2,13 @@
   "name": "penguinstampede-web",
   "version": "0.1.0",
   "devDependencies": {
-    "html-pdf": "~2.0.1",
+    "bower": "^1.8.0",
     "grunt": "~0.4.5",
-    "load-grunt-tasks": "^3.4.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html-pdf": "git+https://github.com/penguinstampede/grunt-html-pdf.git",
     "grunt-jekyll": "~0.4.4",
-    "grunt-html-pdf": "git+ssh://git@github.com:penguinstampede/grunt-html-pdf.git"
+    "html-pdf": "~2.0.1",
+    "load-grunt-tasks": "^3.4.1"
   }
 }

@@ -1,21 +1,21 @@
 ### Experience
 
-*April 2013 - Present*
+*April 2013 - February 2017*
 **DAQRI, Web Developer**
-Working with the Marketing, Design, and Engineering teams as necessary to develop new webpages, email campaigns, web-based lead generation tools, and various API
-integrations including interfacing with Hubspot, NetSuite, SendGrid, and SalesForce.  Skills developed include Ruby web frameworks, SCSS, Node.js, NGINX, and Angular apps.
+Worked with the Marketing, Design, and Engineering teams as necessary to develop new webpages, email campaigns, web-based lead generation tools, and various API
+integrations including interfacing with Hubspot, NetSuite, SendGrid, and SalesForce.  Also helped the Inspiration group by creating User Experience documentation and basic analytics for demos and proofs of concept.  Skills developed include Ruby web frameworks, SCSS, Node.js, NGINX, Wordpress Plugins, and some familiarity with Amazon Web Services, Chef, Docker, and Angular apps.
 
 - **Check out:**
-- [Elements4D][elements]
-- [ARToolKit][artk]
-- [Melon][melon]
+- [Elements4D][elements]{:target="_blank"}
+- [Anatomy4D][anatomy]{:target="_blank"}
+- [ARToolKit][artk]{:target="_blank"}
 
 *June 2012 - April 2013*
 **Addion, Lead Frontend Developer**
-Designed and implemented the UX of app.addion.com, an Online Marketing Tool built on the Django framework.  Skills developed include rapid prototyping, lean development, and continual improvement of my Javascript and HTML5 techniques. Concurrently, continued to oversee client web work in PHP/MySQL.
+Designed and implemented the UX/UI of app.addion.com, an Online Marketing Tool built on the Django framework.  Skills developed include rapid prototyping, lean development, and continual improvement of my Javascript and HTML5 techniques. Concurrently, continued to oversee client web work in PHP/MySQL.
 
 - **Check out:**
-- [Addion.com][addion]
+- [Addion.com][addion]{:target="_blank"}
 
 *July 2009 - June 2012*
 **Ionic Media, Web Designer / Developer**
@@ -31,9 +31,10 @@ programming.
 *February 2007 - April 2008*
 **Vision Internet, Production Designer**
 Worked with Account Managers and Designers to build themes for Vision’s custom ASP-based CMS for Government Websites. Refined skills in table-less HTML and CSS, and contributed to a more flexible and accessible version of the Vision CMS.
-Clients included the City of Manhatan Beach, City of Reno, The Big Blue Bus, and the City of Lancaster.
+Clients included the City of Manhattan Beach, City of Reno, The Big Blue Bus, and the City of Lancaster.
 
 [elements]: http://elements4d.daqri.com
+[anatomy]: http://anatomy4d.daqri.com
 [artk]: http://artoolkit.org
 [melon]: http://thinkmelon.com
 [addion]: http://addion.com

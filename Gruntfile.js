@@ -25,8 +25,24 @@ module.exports = function(grunt) {
     },
     jekyll: {
       build : {}
+    },
+    connect: {
+      server: {
+        options: {
+          livereload: true,
+          port: 9000,
+          base: '_site'
+        }
+      }
+    },
+    watch: {
+      html: {
+        files: ['**/*.html', '**/*.md', '**/*.scss', '!_site/**/*.html'],
+        tasks: ['jekyll', 'html_pdf']
+      }
     }
   })
 
   grunt.registerTask('default', ['jekyll', 'html_pdf'])
+  grunt.registerTask('serve', ['jekyll', 'html_pdf', 'connect', 'watch'])
 }
