@@ -23,8 +23,9 @@ script:
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
 
-after_success:
-  - bundle exec jekyll doctor
+deploy:
+  provider: script
+  script:  bundle exec jekyll doctor
   on:
     branch: staging
 
