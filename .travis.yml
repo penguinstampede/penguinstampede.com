@@ -23,11 +23,8 @@ script:
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
 
-deploy:
-  provider: script
-  script:  bundle exec jekyll doctor
-  on:
-    branch: staging
+after_success:
+  - echo $TRAVIS_BRANCH
 
 branches:
   only:
