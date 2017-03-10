@@ -1,0 +1,22 @@
+{
+  "name": "penguinstampede.com",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Erin K <erin@penguinstampede.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/penguinstampede/penguinstampede.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  }
+}
