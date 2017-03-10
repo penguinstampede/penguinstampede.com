@@ -19,5 +19,6 @@ script:
   - bundle exec jekyll doctor
   - npm install
   - npm install grunt grunt-cli -g
+  - bower install
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
