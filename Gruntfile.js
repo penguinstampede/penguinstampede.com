@@ -43,9 +43,25 @@ module.exports = function(grunt) {
         files: ['**/*.html', '**/*.md', '**/*.scss', '!_site/**/*.html'],
         tasks: ['jekyll', 'html_pdf']
       }
+    },
+    scp: {
+      staging: {
+        options: {
+          host: 'jekyll.penguinstampede.com',
+          privateKey: 'config/deploy_id_rsa'
+        },
+        site: {
+          files: [{
+            cwd: '_site',
+            src: '**/*',
+            dest: '/home/<%= username %>/jekyll.penguinstampede.com/public_html'
+          }]
+        }
+      }
     }
   })
 
   grunt.registerTask('default', ['jekyll', 'html_pdf'])
   grunt.registerTask('serve', ['jekyll', 'html_pdf', 'connect', 'watch'])
+  grunt.registerTask('deploy', ['jekyll', 'html_pdf'])
 }

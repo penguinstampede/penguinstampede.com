@@ -2,19 +2,16 @@ language: ruby
 sudo: false
 rvm:
   - 2.2.3
-
 cache:
   directories:
     - vendor
-
 env:
   global:
-    - TZ=America/Los Angeles # Makes sure posts are generated with the right timestamp
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - TZ=America/Los Angeles
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     - JEKYLL_ENV=production
-
+    - secure: bL7ySgHiH6auEMeAKSQVfvQwhpgF0Od4tnnPTcZx0fg630QkKEfFkR8B97cLCZ0Y5rC1KYBMwiXnKiRDMp/pyH3f9IsywuxiNQYU5+RGtLppB1waZo7pQS3r8KOMUHJv3jta/P/gADyDZn0HEXG6uPH9HArfGi+C3vB6tS2t4zJFVdnoUbNoGn+RpjSAQLg9jDYwhRPwaVgY/6JACHi8B1chjXbGRWoymR8AK3j8dYMsqTVxk+oiaAhvk2qL86kFYgXe/7mepxQU4A5ICOFDHUpRv6VkM64zK04xR1+E5pQ0YmJebGd4LgrJq/NNTBh6wr6xnZa+TsQvJFv/ory9QkHByyW8EmqEgnqpnCBd5/y3C4iCuUvUZ6RdOEsSUVK5wRldYT+tifMC+j6Tp8ZRQZo3leGxx4EQhCCOy8zCgxpveQFc347cJyNaKsVEcnAwP2h2s/dplJeStjNEfPM9pUdBEtcsOGJUXrvAC35zKTFbUdQzOFgKCCvZPPi4uUDER4/NMvAf0M9CnFEZRlEXwyXFMjeZmwKmIaanh8YTxoBDM3unPAn3Gbn0xt64hLHvzU43o/LHvGW3svEfQaYd3FD2p1lspk+Fx5EWTVRFtxN9pShaj+4Snic7BvcxUc+Dy1xmAZJBZYqAgSMVWkPcBtJczF6/zi8t/BtAUt4BJ/E=
 install: bundle install --jobs=3 --retry=3 --path vendor --standalone --deployment
-
 script:
   - bundle exec jekyll doctor
   - npm install
@@ -22,10 +19,9 @@ script:
   - bower install
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
-
 after_success:
-  - bundle exec cap $TRAVIS_BRANCH deploy
-
+  - "openssl aes-256-cbc -k $DEPLOY_KEY -in config/$TRAVIS_BRANCH_deploy_enc_travis -d -a -out config/deploy_id_rsa"
+  - grunt deploy --target=$TRAVIS_BRANCH
 branches:
   only:
     - master

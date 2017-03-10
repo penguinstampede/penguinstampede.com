@@ -10,5 +10,8 @@
     "grunt-jekyll": "~0.4.4",
     "html-pdf": "~2.0.1",
     "load-grunt-tasks": "^3.4.1"
+  },
+  "dependencies": {
+    "grunt-scp": "^0.1.10"
   }
 }
