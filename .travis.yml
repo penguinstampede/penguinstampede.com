@@ -21,7 +21,7 @@ script:
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
 after_success:
   - "openssl aes-256-cbc -k $DEPLOY_KEY -in config/$TRAVIS_BRANCH_deploy_enc_travis -d -a -out config/deploy_id_rsa"
-  - grunt deploy --target=$TRAVIS_BRANCH
+  - "grunt ssh-deploy-release:$TRAVIS_BRANCH"
 branches:
   only:
     - master

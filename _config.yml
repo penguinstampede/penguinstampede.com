@@ -21,7 +21,8 @@ exclude:
   - Gruntfile.js
   - vendor
   - config
-  - lib
+  - .bowerrc
+  - bower.json
 
 description: > # this means to ignore newlines until "baseurl:"
   Web Developer based in Pasadena, CA specializing in marketing websites.
