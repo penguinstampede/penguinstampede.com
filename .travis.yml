@@ -16,6 +16,6 @@ env:
 install: bundle install --jobs=3 --retry=3 --path vendor --standalone --deployment
 
 script:
-  - npm install grunt-cli -g
+  - npm install grunt grunt-cli -g
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
