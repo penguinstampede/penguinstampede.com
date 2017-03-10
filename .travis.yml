@@ -22,3 +22,13 @@ script:
   - bower install
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
+
+after_success:
+  - bundle exec jekyll doctor
+  on:
+    branch: staging
+
+branches:
+  only:
+    - master
+    - staging
