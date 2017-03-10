@@ -19,6 +19,7 @@ exclude:
   - package.json
   - node_modules
   - Gruntfile.js
+  - vendor/bundle
 
 description: > # this means to ignore newlines until "baseurl:"
   Web Developer based in Pasadena, CA specializing in marketing websites.

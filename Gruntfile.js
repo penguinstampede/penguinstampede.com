@@ -24,7 +24,10 @@ module.exports = function(grunt) {
       }
     },
     jekyll: {
-      build : {}
+      options: {
+        bundleExec: true
+      },
+      build: {}
     },
     connect: {
       server: {
