@@ -24,7 +24,7 @@ script:
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
 
 after_success:
-  - echo $TRAVIS_BRANCH
+  - bundle exec cap $TRAVIS_BRANCH deploy
 
 branches:
   only:
