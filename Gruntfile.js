@@ -63,5 +63,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['jekyll', 'html_pdf'])
   grunt.registerTask('serve', ['jekyll', 'html_pdf', 'connect', 'watch'])
-  grunt.registerTask('deploy', ['jekyll', 'html_pdf'])
+  grunt.registerTask('deploy', ['scp'])
 }
