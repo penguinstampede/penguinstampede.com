@@ -5,4 +5,3 @@ _site
 .asset-cache
 node_modules
 _assets/bower
-config/staging_deploy

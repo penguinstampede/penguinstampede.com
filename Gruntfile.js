@@ -48,6 +48,14 @@ module.exports = function(grunt) {
       options: {
         localPath: '_site'
       },
+      master: {
+        options: {
+          host: 'penguinstampede.com',
+          username: 'devilsavocado10',
+          privateKeyFile: 'config/deploy_id_rsa',
+          deployPath: '/home/devilsavocado10/penguinstampede.com'
+        }
+      },
       staging: {
         options: {
           host: 'jekyll.penguinstampede.com',
