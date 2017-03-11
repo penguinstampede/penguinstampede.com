@@ -1,9 +1,9 @@
-language: ruby
+language: node_js
 sudo: false
-rvm:
-  - 2.2.3
 node_js:
   - "4"
+before_install:
+  - rvm install 2.2.3
 cache:
   directories:
     - vendor
