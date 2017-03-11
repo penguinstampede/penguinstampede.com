@@ -3,6 +3,7 @@ var path = require('path')
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt) // npm install --save-dev load-grunt-tasks
+  grunt.loadNpmTasks('grunt-jekyll');
 
   grunt.initConfig({
     html_pdf: {
@@ -58,8 +59,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-ssh-deploy-release');
   grunt.registerTask('default', ['jekyll', 'html_pdf']);
   grunt.registerTask('serve', ['jekyll', 'html_pdf', 'connect', 'watch']);
 }
