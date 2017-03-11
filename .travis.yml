@@ -21,7 +21,7 @@ script:
   - bower install
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
-  - "openssl aes-256-cbc -k $PENGJEK_DEPLOY -in config/$TRAVIS_BRANCH_deploy_enc_travis -d -a -out config/deploy_id_rsa"
+  - "openssl aes-256-cbc -k $PENGJEK_DEPLOY -in config/${TRAVIS_BRANCH}_deploy_enc_travis -d -a -out config/deploy_id_rsa"
   - "grunt ssh-deploy-release:$TRAVIS_BRANCH"
 branches:
   only:
