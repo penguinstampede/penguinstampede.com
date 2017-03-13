@@ -22,7 +22,6 @@ script:
   - bundle exec jekyll doctor
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
-after_success:
   - "openssl aes-256-cbc -k $PENGJEK_DEPLOY -in config/${TRAVIS_BRANCH}_deploy_enc_travis -d -a -out config/deploy_id_rsa"
   - "grunt ssh-deploy-release:$TRAVIS_BRANCH"
 branches:
