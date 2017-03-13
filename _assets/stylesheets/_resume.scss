@@ -193,7 +193,8 @@ body#resume {
     footer{ display: none; }
   }
 }
-body.phantom{
+
+body#resume.phantom{
 
   //PhantomJS-specific styles.
 
