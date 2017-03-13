@@ -4,8 +4,10 @@
     <li><a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
     <li><a href="http://foundation.zurb.com" target="_blank">Foundation</a></li>
     <li><a href="http://gruntjs.com" target="_blank">Grunt</a></li>
-    <li><a href="http://linode.com" target="_blank">Linode</a></li>
-    <li>and many more...</li>
+    <li><strong>and many more... check the <a href="https://github.com/penguinstampede/penguinstampede.com" target="_blank">repo</a> to see.</li>
   </ul>
+  {% if page.layout == 'default' %}
+    {% include social.html %}
+  {% endif %}
 </footer>
 {% javascript main.js %}

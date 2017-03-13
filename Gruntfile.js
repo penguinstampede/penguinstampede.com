@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     html_pdf: {
       dist: {
         options: {
-          base: 'file://' + path.resolve('_site/index.html'),
+          base: 'file://' + path.resolve('_site/resume.html'),
           viewportSize: {
             width: (8.5 - (2 * 0.5)) * 300,
             height: (11 - (2 * 0.5)) * 300
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           border: '.25in'
         },
         files: {
-          '_site/pdf/resume.pdf': ['_site/index.html'],
+          '_site/pdf/ek_resume.pdf': ['_site/resume.html'],
         },
       }
     },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
     },
     watch: {
       html: {
-        files: ['**/*.html', '**/*.md', '**/*.scss', '!_site/**/*.html'],
+        files: ['**/*.html', '**/*.md', '**/*.scss', '**/*.js', '**/*.jpg', '!_site/**/*'],
         tasks: ['jekyll', 'html_pdf']
       }
     },

@@ -1,0 +1,31 @@
+---
+layout: resume
+---
+<header>
+  <div class="main">
+    <h1>Erin Kosewic</h1>
+    <h2>Web Developer / Designer</h2>
+    <p>Pasadena, CA</p>
+  </div>
+  <div class="sidebar align-self-bottom">
+    <a href="pdf/ek_resume.pdf" target="_blank" class="button small pull-right">Download This</a>
+    {% include social.html %}
+  </div>
+</header>
+<section>
+  <div class="main">
+    {% capture main %}{% include main.md %}{% endcapture %}
+    {{ main | markdownify }}
+  </div>
+  <div class="sidebar">
+    <div class="skills">
+      {% capture skills %}{% include skills.md %}{% endcapture %}
+      {{ skills | markdownify }}
+    </div>
+    <div class="other">
+      {% capture other %}{% include other.md %}{% endcapture %}
+      {{ other | markdownify }}
+    </div>
+  </div>
+</section>
+{% include footer.html %}

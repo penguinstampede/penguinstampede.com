@@ -1,0 +1,252 @@
+body#resume {
+  h1, h2, h3{
+    letter-spacing: -0.05em;
+  }
+
+  header, section{
+    @include flex-grid-row();
+    h1, h2{ font-weight: 300; }
+    h3{
+      font-weight: 100;
+    }
+    .main{
+      @include flex-grid-column();
+    }
+    .sidebar{
+      @include breakpoint(small only) {
+        @include flex-grid-column(12);
+      }
+      @include breakpoint(medium only) {
+        @include flex-grid-column(5);
+      }
+      @include breakpoint(large) {
+        @include flex-grid-column(4);
+      }
+      .button{
+        margin-bottom: rem-calc(12);
+      }
+    }
+  }
+  header{
+    padding: rem-calc(30) 0;
+    h1, h2{ color: $secondary-color !important; line-height: 120%;}
+    p{
+      color: $primary-color !important;
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+      }
+    }
+    .sidebar{
+      .button{ margin-bottom: .4rem; }
+      @include flex-align-self('bottom');
+
+      @include breakpoint(medium) {
+        padding-top: rem-calc(70);
+      }
+      @include breakpoint(small only) {
+        .button{ float: left; }
+      }
+    }
+    ul#links{
+      @include menu-base;
+      li{
+        &:last-child{
+          a{
+            padding-right: 0;
+          }
+        }
+      }
+      span{
+        display: none;
+      }
+      @include breakpoint(small only) {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  section{
+    padding-bottom: rem-calc(30);
+
+    .main{
+      h3{ color: $secondary-color !important; }
+      em, strong{
+        display: block;
+      }
+      em{
+        font-size: rem-calc(14);
+        font-style: normal;
+        font-weight: 300;
+      }
+      em + strong{
+        font-weight: 100;
+        color: $primary-color !important;
+      }
+      p{
+        margin: rem-calc(21) 0 0 0;
+      }
+      h3 + p{
+        margin-top: 0;
+      }
+      ul{
+        @include menu-base;
+      }
+    }
+
+    .sidebar{
+      div{
+        margin-bottom: rem-calc(30);
+      }
+      h3{ color: $primary-color !important; }
+      p{ margin-bottom: rem-calc(6); }
+      ul{
+        margin-left: 0;
+        li{
+          list-style: none;
+          display: block;
+          padding-left: rem-calc(20);
+          &:before{
+            font: normal normal normal 14px/1 FontAwesome;
+            content: "\f276";
+            float: left;
+            display: block;
+            margin-left: rem-calc(-16);
+            line-height: 200%;
+            color: $red !important;
+          }
+        }
+      }
+    }
+
+  }
+  footer{
+    padding-bottom: rem-calc(60);
+  }
+}
+
+@media print{
+  body#resume{
+    p, li{ font-size: 80%; }
+    header{
+      padding-bottom: rem-calc(15);
+      .sidebar{
+        padding-top: 0;
+        align-self: flex-start;
+        margin-top: 0;
+        .button{ display: none; }
+        ul#links{
+          display: block;
+          margin: 0;
+          padding: 0;
+          li{
+            display: block;
+            text-align: right;
+            margin: rem-calc(6) 0;
+            color: $primary-color !important;
+            &:first-child{
+              display: none;
+            }
+          }
+          a{
+            color: $primary-color !important;
+            padding: 0;
+            i{
+              color: $primary-color !important;
+            }
+            span{
+              color: $primary-color !important;
+              display: inline;
+            }
+            text-decoration: none !important;
+            &:after{
+              content: '';
+            }
+          }
+        }
+      }
+    }
+    section{
+      padding-bottom: 0;
+      .main{
+        ul{ display: none; }
+        p{
+          margin-bottom: rem-calc(15);
+          margin-right: rem-calc(15);
+          em{
+            font-size: rem-calc(10);
+          }
+        }
+      }
+      .sidebar{
+        a{
+          text-decoration: none;
+          &:after{
+            content: '';
+          }
+        }
+        ul{
+          li{
+            width: 95%;
+            &:before{
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+    footer{ display: none; }
+  }
+  body.phantom{
+
+    //PhantomJS-specific styles.
+
+    //just going to use px here
+    p, li{ font-size: 9px; }
+    h1{ font-size: 22px; }
+    h2{ font-size: 18px; }
+    h3{ font-size: 15px; }
+
+
+    header, section{
+      @include flex-grid-row();
+      .main{
+        @include flex-grid-column(8);
+        float: left;
+      }
+      .sidebar{
+        @include flex-grid-column(4);
+        float: left;
+      }
+    }
+
+    header{
+      padding-top: 0;
+      padding-bottom: 0;
+      .sidebar{
+        float: right;
+      }
+    }
+    section{
+      clear: both;
+      padding-top: rem-calc(15);
+      .main{
+        em{ font-size: 8px; }
+      }
+      .sidebar{
+        ul{
+          margin-bottom: 12px;
+          li{
+            margin: 2px 0;
+            padding-left: 12px;
+            &:before{
+              font-size: 7px;
+              line-height: 160%;
+              margin-left: -12px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

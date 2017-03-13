@@ -13,6 +13,7 @@ include:
   - .gitkeep
 
 exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
   - .gitignore
@@ -36,7 +37,9 @@ gems:
 assets:
   js_compressor: uglifier
   css_compressor: sass
-  prefix: "assets"
+  prefix: "/assets"
+  sources:
+    - _assets/bower
 
 # Build settings
 markdown: kramdown
