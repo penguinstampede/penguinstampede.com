@@ -180,6 +180,9 @@ section{
           line-height: 200%;
           color: $red !important;
         }
+        span{
+          display: none;
+        }
       }
     }
   }
