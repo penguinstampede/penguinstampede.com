@@ -19,6 +19,7 @@ script:
   - npm install
   - npm install grunt grunt-cli -g
   - bower install
+  - bundle exec jekyll doctor
   - grunt
   - bundle exec htmlproofer --assume-extension --only-4xx ./_site
 after_success:

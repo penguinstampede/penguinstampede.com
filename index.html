@@ -1,25 +1,14 @@
 ---
 layout: default
 ---
-<header>
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li class="menu-text">Erin Kosewic</li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li>
-          <a href="/resume.html">Resume</a>
-        </li>
-        <li>
-          <a href="#" data-open="contact">Contact</a>
-        </li>
-      </ul>
+<section id="top" class="expanded row text-center">
+  <div class="columns align-self-middle">
+    <div class="inside">
+      <h1>Enough about me, let's talk about <em>you</em>.</h1>
+      <p>I am a <a href="/resume.html">Full Stack Developer</a> if you must know, but I'm really interested in <strong>creation through collaboration</strong>. What are your business needs and how can I help?</p>
     </div>
   </div>
-</header>
+</section>
 <section id="fitin" class="align-right expanded row text-center">
   <div class="medium-6 columns darkbg align-self-middle">
     <div class="inside">
@@ -41,18 +30,8 @@ layout: default
     <div class="inside">
       <h1>You can get just what you need.</h1>
       <p>I have over ten years of experience creating for the web.  Whether you need a homepage redesign, added functionality, a new email campaign, or just someone to explain your Google Analytics, I can help.  I can also link you with other trusted creatives/developers who excel in their specialized fields.</p>
-      <a class="button large cta" href="#" data-open="contact">Get in touch.</a>
+      <button class="button large cta" data-open="contact">Get in touch.</button>
       <a class="button large cta" href="/resume.html">View my resume.</a>
     </div>
   </div>
 </section>
-<div class="reveal" id="contact" data-reveal>
-  <h1>Get In Touch</h1>
-  <p class="lead">Let's discuss how we can collaborate!</p>
-  <p></p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-{% include footer.html %}
-{% javascript lp.js %}

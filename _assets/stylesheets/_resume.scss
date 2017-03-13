@@ -1,8 +1,4 @@
 body#resume {
-  h1, h2, h3{
-    letter-spacing: -0.05em;
-  }
-
   header, section{
     @include flex-grid-row();
     h1, h2{ font-weight: 300; }
@@ -196,57 +192,57 @@ body#resume {
     }
     footer{ display: none; }
   }
-  body.phantom{
+}
+body.phantom{
 
-    //PhantomJS-specific styles.
+  //PhantomJS-specific styles.
 
-    //just going to use px here
-    p, li{ font-size: 9px; }
-    h1{ font-size: 22px; }
-    h2{ font-size: 18px; }
-    h3{ font-size: 15px; }
+  //just going to use px here
+  p, li{ font-size: 9px; }
+  h1{ font-size: 22px; }
+  h2{ font-size: 18px; }
+  h3{ font-size: 15px; }
 
 
-    header, section{
-      @include flex-grid-row();
-      .main{
-        @include flex-grid-column(8);
-        float: left;
-      }
-      .sidebar{
-        @include flex-grid-column(4);
-        float: left;
-      }
+  header, section{
+    @include flex-grid-row();
+    .main{
+      @include flex-grid-column(8);
+      float: left;
     }
-
-    header{
-      padding-top: 0;
-      padding-bottom: 0;
-      .sidebar{
-        float: right;
-      }
+    .sidebar{
+      @include flex-grid-column(4);
+      float: left;
     }
-    section{
-      clear: both;
-      padding-top: rem-calc(15);
-      .main{
-        em{ font-size: 8px; }
-      }
-      .sidebar{
-        ul{
-          margin-bottom: 12px;
-          li{
-            margin: 2px 0;
-            padding-left: 12px;
-            &:before{
-              font-size: 7px;
-              line-height: 160%;
-              margin-left: -12px;
-            }
+  }
+
+  header{
+    padding-top: 0;
+    padding-bottom: 0;
+    .sidebar{
+      float: right;
+    }
+  }
+  section{
+    clear: both;
+    padding-top: rem-calc(15);
+    .main{
+      em{ font-size: 8px; }
+    }
+    .sidebar{
+      ul{
+        margin-bottom: 12px;
+        li{
+          margin: 2px 0;
+          padding-left: 12px;
+          &:before{
+            font-size: 7px;
+            line-height: 160%;
+            margin-left: -12px;
           }
         }
       }
     }
-
   }
+
 }

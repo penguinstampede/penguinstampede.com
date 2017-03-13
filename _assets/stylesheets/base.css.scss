@@ -16,7 +16,7 @@ $red: #B42D2F;
     @include foundation-flex-grid;
   }
   @include foundation-typography;
-  //@include foundation-forms;
+  @include foundation-forms;
   @include foundation-button;
   //@include foundation-accordion;
   //@include foundation-accordion-menu;
@@ -60,7 +60,7 @@ $red: #B42D2F;
 
 @import 'resume';
 
-body#lp{
+body.lp{
   section{
     background-size: cover;
     background-position: top center;
@@ -77,14 +77,18 @@ body#lp{
         padding: rem-calc(45) rem-calc(15);
       }
     }
+    &#top{
+      background-color: $secondary-color;
+      color: $white;
+    }
     &#fitin{
-      background-image: image_url('pebbles.jpg');
+      background-image: url('pebbles.jpg');
     }
     &#standout{
-      background-image: image_url('duck.jpg');
+      background-image: url('duck.jpg');
     }
     &#need{
-      background-image: image_url('apple.jpg');
+      background-image: url('apple.jpg');
     }
   }
   h1{
@@ -92,6 +96,31 @@ body#lp{
   }
   .button.cta{
     text-transform: capitalize;
+  }
+}
+
+body.site{
+  header{
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    width: 100%;
+    color: $white;
+    .top-bar{
+      a{
+        @include button();
+        margin-bottom: 0;
+        margin-left: rem-calc(8);
+      }
+    }
+  }
+  footer{
+    background: $black;
+    padding: rem-calc(15) 0;
+    color: $white;
+    max-width: 100%;
+    a{
+      color: $secondary-color;
+    }
   }
 }
 
