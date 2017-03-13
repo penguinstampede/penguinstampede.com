@@ -100,15 +100,21 @@ body#resume {
         li{
           list-style: none;
           display: block;
-          padding-left: rem-calc(20);
-          &:before{
-            font: normal normal normal 14px/1 FontAwesome;
-            content: "\f276";
-            float: left;
-            display: block;
-            margin-left: rem-calc(-16);
-            line-height: 200%;
-            color: $red !important;
+        }
+      }
+      .other{
+        ul{
+          li{
+            padding-left: rem-calc(20);
+            &:before{
+              font: normal normal normal 14px/1 FontAwesome;
+              content: "\f276";
+              float: left;
+              display: block;
+              margin-left: rem-calc(-16);
+              line-height: 220%;
+              color: $red !important;
+            }
           }
         }
       }
