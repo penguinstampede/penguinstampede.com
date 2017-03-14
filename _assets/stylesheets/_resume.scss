@@ -105,6 +105,9 @@ body#resume {
         li{
           list-style: none;
           display: block;
+          span{
+            display: none;
+          }
         }
       }
       .other{
@@ -247,9 +250,6 @@ body#resume.phantom{
         li{
           margin: 2px 0;
           padding-left: 0;
-          span{
-            display: none;
-          }
           &:before{
             content: ''
           }
