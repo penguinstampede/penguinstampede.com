@@ -13,9 +13,6 @@ Worked with the Marketing team to develop new websites, emails, lead-generation 
 **Addion, Lead Frontend Developer**
 Designed and implemented the UX/UI of app.addion.com, an Online Marketing Tool built on the Django framework. Skills developed include rapid prototyping, lean development, and continual improvement of my Javascript and HTML5 techniques. Concurrently, continued to oversee client web work in PHP/MySQL.
 
-- **Check out:**
-- [Addion.com][addion]{:target="_blank"}
-
 *July 2009 - June 2012*
 **Ionic Media, Web Designer / Developer**
 Worked with Account Managers to design and build various websites, landing pages, Flash banners, emails, plugins and Facebook apps. Clients included Feld Entertainment, Bausch & Lomb, Disney Movie Club, and Phillips BreathRX. Skills developed include Magento and Wordpress development, and exposure to Django through working on the Addion App, which spun off into its own company.
