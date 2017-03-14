@@ -26,12 +26,3 @@ $(function(){
     var slider = new Foundation.Slider(the_slider, slider_options);
   });
 });
-
-var el = document.body, className = 'phantom';
-if(window._phantom){
-  if(el.classList){
-    el.classList.add(className);
-  } else {
-    el.className += ' ' + className;
-  }
-}

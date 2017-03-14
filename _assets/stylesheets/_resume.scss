@@ -90,6 +90,11 @@ body#resume {
     }
 
     .sidebar{
+      .slider, .slider-handle, .slider-fill{
+        &:hover{
+          cursor: default;
+        }
+      }
       div{
         margin-bottom: rem-calc(30);
       }
@@ -241,11 +246,12 @@ body#resume.phantom{
         margin-bottom: 12px;
         li{
           margin: 2px 0;
-          padding-left: 12px;
+          padding-left: 0;
+          span{
+            display: none;
+          }
           &:before{
-            font-size: 7px;
-            line-height: 160%;
-            margin-left: -12px;
+            content: ''
           }
         }
       }

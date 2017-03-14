@@ -15,6 +15,14 @@
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-2434459-9','auto');ga('send','pageview');
+      var el = document.body, className = 'phantom';
+      if(window._phantom){
+        if(el.classList){
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
     </script>
     {% javascript resume.js %}
   </body>
