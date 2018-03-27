@@ -2,7 +2,7 @@
 
 *April 2017 - Present*
 **Supplyframe, Full Stack Engineer**
-Currently the lead engineer on Tindie. At any given time I can be found working on maintenance upgrades and fixes, implementing new design updates, and planning out features for the hardware marketplace.
+Currently the lead engineer on Tindie. At any given time I can be found working on maintenance upgrades and fixes, implementing new design updates, and planning out features for the hardware marketplace.  Skills utilized include Python, LESS, and Javascript.
 
 - **Check out:**
 - [Tindie][tindie]{:target="_blank"}
@@ -12,17 +12,9 @@ Currently the lead engineer on Tindie. At any given time I can be found working 
 Worked with the Marketing, Design, and Engineering teams as necessary to develop new webpages, email campaigns, web-based lead generation tools, and various API
 integrations including interfacing with Hubspot, NetSuite, SendGrid, and SalesForce.  Also helped the Inspiration group by creating User Experience documentation and basic analytics for demos and proofs of concept.  Skills developed include Ruby web frameworks, SCSS, Node.js, NGINX, Wordpress Plugins, and some familiarity with Amazon Web Services, Chef, Docker, and Angular apps.
 
-- **Check out:**
-- [Elements4D][elements]{:target="_blank"}
-- [Anatomy4D][anatomy]{:target="_blank"}
-- [ARToolKit][artk]{:target="_blank"}
-
 *June 2012 - April 2013*
 **Addion, Lead Frontend Developer**
 Designed and implemented the UX/UI of app.addion.com, an Online Marketing Tool built on the Django framework.  Skills developed include rapid prototyping, lean development, and continual improvement of my Javascript and HTML5 techniques. Concurrently, continued to oversee client web work in PHP/MySQL.
-
-- **Check out:**
-- [Addion.com][addion]{:target="_blank"}
 
 *July 2009 - June 2012*
 **Ionic Media, Web Designer / Developer**
@@ -41,7 +33,3 @@ Worked with Account Managers and Designers to build themes for Vision’s custom
 Clients included the City of Manhattan Beach, City of Reno, The Big Blue Bus, and the City of Lancaster.
 
 [tindie]: https://tindie.com
-[elements]: http://elements4d.daqri.com
-[anatomy]: http://anatomy4d.daqri.com
-[artk]: http://artoolkit.org
-[addion]: http://addion.com
