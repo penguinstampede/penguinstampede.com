@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     html_pdf: {
       dist: {
         options: {
-          base: 'file://' + path.resolve('_site/index.html'),
+          base: 'http://localhost:9000',
           viewportSize: {
             width: (8.5 - (2 * 0.5)) * 300,
             height: (11 - (2 * 0.5)) * 300
@@ -67,6 +67,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['jekyll', 'html_pdf']);
-  grunt.registerTask('serve', ['jekyll', 'html_pdf', 'connect', 'watch']);
+  grunt.registerTask('default', ['jekyll', 'connect', 'html_pdf']);
+  grunt.registerTask('serve', ['jekyll', 'connect', 'html_pdf', 'watch']);
 }

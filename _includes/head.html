@@ -4,11 +4,11 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link rel="apple-touch-icon" href="{% asset 'apple-touch-icon.png' @path %}">
   <script src="https://use.typekit.net/xbw2qkm.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  {% stylesheet base.css %}
-  {% javascript vendor/modernizr-2.8.3.min.js %}
+  {% asset 'base.css' %}
+  {% asset 'vendor/modernizr-2.8.3.min.js' %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

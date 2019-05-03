@@ -2,10 +2,7 @@
 
 *April 2017 - Present*
 **Supplyframe, Full Stack Engineer**
-Currently the lead engineer on Tindie. At any given time I can be found working on maintenance upgrades and fixes, implementing new design updates, and planning out features for the hardware marketplace.  Skills utilized include Python, LESS, and Javascript.
-
-- **Check out:**
-- [Tindie][tindie]{:target="_blank"}
+Currently the lead engineer on [Tindie][tindie]{:target="_blank"}. At any given time I can be found working on maintenance upgrades and fixes, implementing design updates, and planning out new features for the hardware marketplace.  Skills utilized include Python, LESS, and Javascript.
 
 *April 2013 - February 2017*
 **DAQRI, Web Developer**

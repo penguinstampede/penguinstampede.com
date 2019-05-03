@@ -1,5 +1,5 @@
 @import 'settings';
-@import '../bower/foundation-sites/scss/foundation';
+@import 'foundation';
 
 $red: #B42D2F;
 
@@ -116,13 +116,12 @@ header{
   ul#links{
     @include menu-base;
     li{
-      &:last-child{
-        a{
-          padding-right: 0;
-        }
+      > span {
+          display: block;
+          padding: .4em 0;
       }
     }
-    span{
+    span.print{
       display: none;
     }
     @include breakpoint(small only) {
@@ -193,6 +192,8 @@ footer{
     @include menu-base;
     strong{
       font-weight: 300;
+      display: block;
+      padding: .4em 0;
     }
     @include breakpoint(small only) {
       flex-wrap: wrap;

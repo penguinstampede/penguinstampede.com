@@ -9,7 +9,8 @@
     "grunt-html-pdf": "git+https://github.com/penguinstampede/grunt-html-pdf.git",
     "grunt-jekyll": "~0.4.4",
     "html-pdf": "~2.0.1",
-    "load-grunt-tasks": "^3.4.1"
+    "load-grunt-tasks": "^3.4.1",
+    "foundation-sites": "^6.3.1"
   },
   "dependencies": {
     "grunt-ssh-deploy-release": "^1.12.1"

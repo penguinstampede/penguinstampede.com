@@ -10,11 +10,11 @@ layout: default
   <div class="sidebar align-self-bottom">
     <a href="pdf/resume.pdf" target="_blank" class="button small pull-right">Download This</a>
     <ul id="links" class="align-right">
-      <li>Find Me:</li>
-      <li><a href="https://github.com/penguinstampede" target="_blank" title="Follow me on GitHub"><i class="fa fa-github"></i> <span>penguinstampede</span></a></li>
-      <li><a href="https://twitter.com/penguinstampede" target="_blank" title="Follow me on Twitter"><i class="fa fa-twitter"></i> <span>@penguinstampede</span></a></li>
-      <li><a href="https://www.linkedin.com/in/ekosewic" target="_blank" title="Connect on LinkedIn"><i class="fa fa-linkedin"></i> <span>linkedin.com/in/ekosewic</span></a></li>
-      <li><a href="mailto:erin@penguinstampede.com" title="Email Me"><i class="fa fa-envelope-o"></i> <span>erin@penguinstampede.com</span></a></li>
+      <li><span>Find Me:</span></li>
+      <li><a href="https://github.com/penguinstampede" target="_blank" title="Follow me on GitHub"><i class="fa fa-github"></i> <span class="print">penguinstampede</span></a></li>
+      <li><a href="https://twitter.com/penguinstampede" target="_blank" title="Follow me on Twitter"><i class="fa fa-twitter"></i> <span class="print">@penguinstampede</span></a></li>
+      <li><a href="https://www.linkedin.com/in/ekosewic" target="_blank" title="Connect on LinkedIn"><i class="fa fa-linkedin"></i> <span class="print">linkedin.com/in/ekosewic</span></a></li>
+      <li><a href="mailto:erin@penguinstampede.com" title="Email Me"><i class="fa fa-envelope-o"></i> <span class="print">erin@penguinstampede.com</span></a></li>
     </ul>
   </div>
 </header>
@@ -28,10 +28,12 @@ layout: default
       {% capture skills %}{% include skills.md %}{% endcapture %}
       {{ skills | markdownify }}
     </div>
+    {% comment %}
     <div class="other">
       {% capture other %}{% include other.md %}{% endcapture %}
       {{ other | markdownify }}
     </div>
+    {% endcomment %}
   </div>
 </section>
 {% include footer.html %}

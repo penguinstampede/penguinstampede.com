@@ -10,33 +10,34 @@ title: Erin Kosewic
 email: erin@penguinstampede.com
 
 include:
-  - .gitkeep
+    - .gitkeep
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .gitignore
-  - package.json
-  - node_modules
-  - Gruntfile.js
-  - vendor
-  - config
-  - .bowerrc
-  - bower.json
+    - Gemfile
+    - Gemfile.lock
+    - .gitignore
+    - package.json
+    - node_modules
+    - Gruntfile.js
+    - vendor
+    - config
 
 description: > # this means to ignore newlines until "baseurl:"
-  Web Developer based in Pasadena, CA specializing in marketing websites.
-  Often found tinkering with repos at two in the morning.
+    Web Developer based in Pasadena, CA specializing in marketing websites.
+    Often found tinkering with repos at two in the morning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://penguinstampede.com" # the base hostname & protocol for your site
 
 gems:
-  - jekyll-assets
+    - jekyll-assets
 
 assets:
-  js_compressor: uglifier
-  css_compressor: sass
-  prefix: "assets"
+    js_compressor: uglifier
+    css_compressor: sass
+    prefix: "assets"
+    sources:
+        - node_modules/foundation-sites/scss
+
 
 # Build settings
 markdown: kramdown
